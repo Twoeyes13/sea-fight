@@ -1,0 +1,251 @@
+polygon.b {
+  fill: black;
+  stroke: blue;
+}
+polygon.w {
+  fill: white;
+  stroke: red;
+}
+
+.battle-field {
+  margin: 10px;
+  padding: 5px;
+  max-width: max-content;
+  border-image-slice: 15 15 15 15 fill;
+  border-image-width: 10px 10px 10px 10px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: round round;
+  border-image-source: url("https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/CSS/CSS_Background_and_Borders/Border-image_generator/border-image-3.png");
+  border-style: solid;
+  /* height: 700px;
+    width: 700px; */
+}
+
+.cell {
+  color: rgb(0, 0, 0);
+  border-style: solid;
+  border-color: blue;
+  background-color: white;
+  border-width: 1px;
+  /* margin: 5px; */
+  margin: 0;
+  text-align: center;
+
+  margin-left: 0;
+  border-spacing: 0;
+  height: 50px;
+  width: 50px;
+  border-collapse: collapse;
+  position: relative;
+  vertical-align: baseline;
+  /* float: left; */
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Likely future */
+  /* background: rgb(255,255,255); */
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0) 60%,
+    rgba(192, 202, 254, 0) 87%,
+    rgba(153, 170, 255, 0) 100%
+  );
+  z-index: 4;
+}
+.field {
+  padding: 10px;
+
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 60%,
+    rgba(192, 254, 227, 1) 87%,
+    rgba(153, 255, 171, 1) 100%
+  );
+  /* green */
+
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 60%,
+    rgba(192, 202, 254, 1) 87%,
+    rgba(153, 170, 255, 1) 100%
+  );
+  /* new blue */
+
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 60%,
+    rgba(192, 202, 254, 1) 87%,
+    rgba(63, 94, 251, 0.5676471272102591) 100%
+  );
+  /* old blue */
+
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(192, 254, 227, 1) 81%,
+    rgba(3, 244, 57, 1) 100%
+  );
+  /* new green */
+
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(192, 254, 227, 1) 64%,
+    rgba(244, 3, 3, 1) 100%
+  );
+}
+
+.port {
+  height: auto;
+  width: auot;
+  margin: 10px;
+  /* background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(192,254,227,1) 81%, rgb(0, 3, 1) 100%); */
+  border: 1px;
+  border-color: red;
+  min-width: 50px;
+  min-height: 50px;
+}
+
+.port-1 {
+  height: auto;
+  width: auot;
+  /* background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(192,254,227,1) 81%, rgb(0, 3, 1) 100%); */
+  border: 1px;
+  border-color: red;
+  min-width: 50px;
+  min-height: 50px;
+}
+
+.port-2 {
+  height: auto;
+  width: auot;
+  /* background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(192,254,227,1) 81%, rgb(0, 3, 1) 100%); */
+  border: 1px;
+  border-color: red;
+  min-width: 100px;
+  min-height: 50px;
+}
+
+.port-3 {
+  height: auto;
+  width: auot;
+  /* background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(192,254,227,1) 81%, rgb(0, 3, 1) 100%); */
+  border: 1px;
+  border-color: red;
+  min-width: 150px;
+  min-height: 50px;
+  z-index: 3;
+}
+
+.port-4 {
+  height: auto;
+  width: auot;
+  /* background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(192,254,227,1) 81%, rgb(0, 3, 1) 100%); */
+  border: 1px;
+  border-color: red;
+  min-width: 200px;
+  min-height: 50px;
+}
+
+.ship {
+  background-color: aquamarine;
+  border-color: red;
+  border-style: dashed;
+  position: absolute;
+  overflow: visible;
+  z-index: 3;
+  cursor: grab;
+}
+
+.ship-1 {
+  /* height: 48px; 
+    width: 48px; */
+  background-color: aquamarine;
+  border-color: red;
+  border-style: dashed;
+  cursor: grab;
+}
+
+.ship-2 {
+  /* height: 98px;
+    width: 48px; */
+  background-color: aquamarine;
+  border-color: red;
+  border-style: dashed;
+  position: absolute;
+  overflow: visible;
+  z-index: 3;
+  cursor: grab;
+}
+
+.ship-3 {
+  /* height: 148px;
+    width: 48px; */
+  background-color: aquamarine;
+  border-color: red;
+  border-style: dashed;
+  position: absolute;
+  overflow: visible;
+  z-index: 3;
+  cursor: grab;
+}
+
+.cont {
+  padding: 0;
+  margin: 0;
+}
+
+.digit-v {
+  margin-top: 10px;
+  padding-top: 5px;
+}
+
+.digit-h {
+  display: table-row;
+}
+
+.number {
+  /* padding-top: 13px;
+    padding-bottom: 13px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding-right: 5px;
+     */
+
+  height: 50px;
+  font-size: small;
+}
+
+table {
+  height: auto;
+  width: auto;
+  /* background-color: red; */
+  padding: 0;
+  /* background-color: black; */
+}
+tbody {
+  height: auto;
+  width: auto;
+  padding: 0;
+}
+td {
+  height: auto;
+  width: auto;
+  /* background-color: red; */
+  padding: 0;
+}
+tr {
+  height: auto;
+  width: auto;
+  padding: 0;
+}
